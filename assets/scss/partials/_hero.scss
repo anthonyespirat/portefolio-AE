@@ -1,0 +1,47 @@
+// Variables
+@use "font";
+@use "color";
+
+/* HERO */
+
+#hero {
+    background-image: url("../../assets/images/fondhero.jpg");
+    background-size: cover;
+    height: 900px;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+
+    h1 {
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+
+
+    .custom {
+        color: color.$blue
+    }
+}
+
+.ability {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: font.$bold;
+
+    p {
+        padding: 0 25px 0 25px;
+
+        &:not(:last-child) {
+            border-right: 2px solid color.$black;
+        }
+    }
+}

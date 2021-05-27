@@ -1,0 +1,35 @@
+// Variables
+@use "font";
+@use "color";
+
+/* HEADER */
+header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 3;
+    margin-left: 50px;
+
+    img {
+        width: 90px;
+    }
+}
+
+nav {
+    flex: 1;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        text-transform: uppercase;
+        font-weight: font.$bold;
+    }
+
+    a:hover {
+        transition: 0.4s;
+        color: color.$blue;
+    }
+}

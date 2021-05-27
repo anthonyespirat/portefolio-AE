@@ -1,8 +1,40 @@
+// Variables
 @use "partials/font";
 @use "partials/color";
+// Partials
+@use "partials/header";
+@use "partials/hero";
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
 
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 4em;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: color.$black;
 }

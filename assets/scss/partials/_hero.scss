@@ -26,10 +26,6 @@
         font-weight: 700;
     }
 
-
-    .custom {
-        color: color.$blue
-    }
 }
 
 .ability {
@@ -39,10 +35,16 @@
     font-weight: font.$bold;
 
     p {
-        padding: 0 25px 0 25px;
+        padding: 0 30px 0 30px;
+        cursor: default;
+        font-size: 1.3em;
 
         &:not(:last-child) {
-            border-right: 2px solid color.$black;
+            border-right: 3px solid color.$black;
+        }
+
+        &:hover {
+            color: color.$blue;
         }
     }
 }

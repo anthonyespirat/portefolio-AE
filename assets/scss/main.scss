@@ -4,6 +4,10 @@
 // Partials
 @use "partials/header";
 @use "partials/hero";
+@use "partials/home";
+@use "partials/skill";
+@use "partials/contact";
+
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 
@@ -23,12 +27,25 @@ html {
 }
 
 h1 {
-    font-size: 4em;
-    white-space: nowrap;
+    font-size: 4.5em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid color.$blue;
+    display: inline-block;
+    font-weight: font.$regular;
+
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: font.$bold;
+    text-align: center;
+    margin-bottom: 150px;
 }
 
 p {
@@ -41,5 +58,27 @@ a {
 }
 
 .container {
-    height: 100px;
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+}
+
+.custom {
+    color: color.$blue
+}
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    background-color: color.$blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: #fff;
+
+    p {
+        font-size: 0.9em;
+    }
 }

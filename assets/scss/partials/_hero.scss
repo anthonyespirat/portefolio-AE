@@ -7,11 +7,12 @@
 #hero {
     background-image: url("../../assets/images/fondhero.jpg");
     background-size: cover;
-    height: 850px;
+    height: 80vh;
     background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .heroContainer {

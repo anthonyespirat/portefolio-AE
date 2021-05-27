@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 /* HEADER */
 header {
-  height: 130px;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,7 @@ nav a:hover {
 #hero {
   background-image: url("../../assets/images/fondhero.jpg");
   background-size: cover;
-  height: 850px;
+  height: 80vh;
   background-position: bottom;
   display: flex;
   justify-content: center;
@@ -76,6 +76,7 @@ nav a:hover {
 body {
   font-size: 18px;
   font-family: "Lato", sans-serif;
+  color: #272727;
 }
 
 html {
@@ -98,6 +99,10 @@ p {
 a {
   text-decoration: none;
   color: #272727;
+}
+
+.container {
+  height: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */

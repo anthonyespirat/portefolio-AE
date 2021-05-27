@@ -1,0 +1,33 @@
+// Variables
+@use "font";
+@use "color";
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .heroContainer {
+        h1 {
+            justify-content: center;
+        }
+    }
+
+    .ability {
+        p {
+            font-size: 1em;
+        }
+    }
+}
+
+@media (max-width: 806px) {
+    .ability {
+        p {
+            font-size: 1em;
+        }
+    }
+}

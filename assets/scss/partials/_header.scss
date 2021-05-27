@@ -38,3 +38,15 @@ nav {
         color: color.$blue;
     }
 }
+
+.hamburger {
+    display: none;
+    margin-right: 70px;
+
+    svg {
+        &hover {
+            color: red;
+        }
+    }
+
+}

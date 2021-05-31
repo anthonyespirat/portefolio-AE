@@ -7,9 +7,11 @@
 #contact {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     img {
-        width: 320px;
+        width: 100%;
+        max-width: 320px;
         border-radius: 50%;
     }
 
@@ -38,4 +40,20 @@
         }
     }
 
+}
+
+/* FOOTER */
+
+footer {
+    height: 70px;
+    background-color: color.$blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: #fff;
+
+    p {
+        font-size: 0.9em;
+    }
 }

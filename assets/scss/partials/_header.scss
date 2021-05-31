@@ -7,7 +7,7 @@ header {
     height: 20vh;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .logo {
@@ -39,14 +39,92 @@ nav {
     }
 }
 
-.hamburger {
+span {
+    text-align: center;
+}
+
+.hamburger_icon {
     display: none;
     margin-right: 70px;
+    position: relative;
+    height: 28px;
+    width: 38px;
+    cursor: pointer;
+    z-index: 101;
 
-    svg {
-        &hover {
-            color: red;
-        }
+
+    span {
+        position: absolute;
+        border-radius: 10px;
+        height: 5px;
+        width: 100%;
+        display: block;
+        background-color: color.$black;
+        transition: ease-in-out 0.3s;
+        transform: rotate(0deg);
     }
 
+    span:nth-child(1) {
+        top: 0px;
+        transform-origin: left top;
+        z-index: 2;
+    }
+
+    span:nth-child(2) {
+        top: 12px;
+        background-color: color.$blue;
+        transform-origin: center;
+    }
+
+    span:nth-child(3) {
+        top: 24px;
+        transform-origin: left bottom;
+    }
+
+    span.open:nth-child(1) {
+        transform: rotate(42deg);
+
+    }
+
+    span.open:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    span.open:nth-child(3) {
+        transform: rotate(-42deg);
+        background-color: color.$blue;
+
+
+    }
+}
+
+
+
+.menu_mobile {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background-color: #FAFAFA;
+    transition: 0.4s;
+
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 0px;
+        height: 100%;
+    }
+
+}
+
+.toggle {
+    display: block;
 }

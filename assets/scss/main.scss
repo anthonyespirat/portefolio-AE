@@ -7,7 +7,9 @@
 @use "partials/home";
 @use "partials/skill";
 @use "partials/contact";
+@use "partials/menu";
 @use "partials/responsive";
+
 
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
@@ -65,20 +67,4 @@ a {
 
 .custom {
     color: color.$blue
-}
-
-/* FOOTER */
-
-footer {
-    height: 70px;
-    background-color: color.$blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;
-    color: #fff;
-
-    p {
-        font-size: 0.9em;
-    }
 }

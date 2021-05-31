@@ -2,12 +2,16 @@
 @use "font";
 @use "color";
 
+.noborder {
+    border-right: none !important;
+}
+
 @media (max-width: 768px) {
-    nav ul {
+    .menu {
         display: none;
     }
 
-    .hamburger {
+    .hamburger_icon {
         display: block;
     }
 
@@ -15,6 +19,10 @@
         h1 {
             justify-content: center;
         }
+    }
+
+    .toggle_menu {
+        display: block;
     }
 
     .ability {
@@ -29,5 +37,27 @@
         p {
             font-size: 1em;
         }
+    }
+}
+
+@media (max-width: 618px) {
+    #contact {
+        justify-content: center;
+
+
+        img {
+            max-width: 320px;
+            margin-bottom: 50px;
+        }
+
+        .right {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    footer {
+        margin-top: 0px;
     }
 }

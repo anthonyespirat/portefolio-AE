@@ -7,7 +7,6 @@
 @use "partials/home";
 @use "partials/skill";
 @use "partials/contact";
-@use "partials/menu";
 @use "partials/responsive";
 
 
@@ -20,6 +19,7 @@
 }
 
 body {
+    position: relative;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     color: color.$black;

@@ -1,6 +1,8 @@
 let hamIcon = document.querySelector('.hamburger_icon');
 let menuMobile = document.querySelector('.menu_mobile');
 let p = document.querySelectorAll('.ability p');
+let apropos = document.getElementById("apropos");
+let btnTop = document.querySelector(".onTop");
 
 function menu () {
     hamIcon.childNodes[1].classList.toggle("open");
@@ -20,3 +22,15 @@ function remove() {
 hamIcon.addEventListener('click', menu);
 
 console.log('Et non, pas d\'erreur !');
+
+console.log(btnTop);
+
+window.onscroll = function() {
+    if (window.pageYOffset > 300) {
+        btnTop.style.display = "flex";
+    }
+    else {
+        btnTop.style.display = "none";
+    }
+}
+

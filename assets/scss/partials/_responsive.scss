@@ -6,6 +6,12 @@
     border-right: none !important;
 }
 
+.menu_open {
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+
 @media (max-width: 768px) {
     .menu {
         display: none;

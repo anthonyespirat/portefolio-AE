@@ -11,15 +11,17 @@ function menu () {
     hamIcon.childNodes[2].classList.toggle("open");
     hamIcon.childNodes[3].classList.toggle("open");
     menuMobile.classList.toggle("toggle");
-
+    hamIcon.classList.toggle("menu_open");
 }
+
 // MENU MOBILE CLOSE > CLICK ON LINK
-function remove() {
+function remove_menu() {
     if (hamIcon.childNodes[1].classList.contains("open") == true || hamIcon.childNodes[2].classList.contains("open") == true || hamIcon.childNodes[3].classList.contains("open") == true) {
         menuMobile.classList.remove("toggle")
         hamIcon.childNodes[1].classList.remove("open");
         hamIcon.childNodes[2].classList.remove("open");
         hamIcon.childNodes[3].classList.remove("open");
+        hamIcon.classList.remove("menu_open");
     }
 }
 // EVENT MENU

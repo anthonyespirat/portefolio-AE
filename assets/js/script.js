@@ -3,6 +3,8 @@ let menuMobile = document.querySelector('.menu_mobile');
 let p = document.querySelectorAll('.ability p');
 let apropos = document.getElementById("apropos");
 let btnTop = document.querySelector(".onTop");
+let blueHover = document.querySelectorAll(".blue");
+
 
 
 // MENU MOBILE OPEN
@@ -39,3 +41,12 @@ window.onscroll = function() {
     }
 }
 
+// EFFECT HOVER SUR LES SVG
+for (let i = 0; i < blueHover.length; i++){
+    blueHover[i].addEventListener('mouseover', ()=> {
+        blueHover[i].firstElementChild.setAttribute('fill', "#5688C7");
+    })
+    blueHover[i].addEventListener('mouseleave', ()=> {
+        blueHover[i].firstElementChild.setAttribute('fill', "#272727");
+    })
+}

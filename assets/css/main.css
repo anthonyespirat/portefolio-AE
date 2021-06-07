@@ -237,7 +237,7 @@ span {
 #contact .right h2 {
   margin-bottom: 20px;
 }
-#contact .right img {
+#contact .right svg {
   width: 40px;
   margin-left: 15px;
 }
@@ -259,14 +259,16 @@ footer p {
   font-size: 0.9em;
 }
 
+svg path {
+  transition: 0.4s;
+}
+
 .noborder {
   border-right: none !important;
 }
 
 .menu_open {
-  position: fixed;
-  top: 50px;
-  right: 0;
+  position: relative;
 }
 
 @media (max-width: 768px) {

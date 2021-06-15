@@ -10,7 +10,38 @@
     position: relative;
 }
 
+@media (max-width: 1440px) {
+
+    //HEADER -5vh
+
+}
+
+@media (max-width: 960px) {
+    .heroContainer {
+        margin-bottom: 15%;
+    }
+
+
+
+    .more {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
 @media (max-width: 768px) {
+    #hero {
+        h1 {
+            display: flex;
+            flex-direction: column;
+            font-size: 3.8em;
+        }
+    }
+
+    .more {
+        justify-content: center;
+    }
+
     .menu {
         display: none;
     }
@@ -35,6 +66,14 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    #hero {
+        background-size: 275%;
+        background-position: bottom center;
+    }
+}
+
 
 @media (max-width: 806px) {
     .ability {

@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portefolio Anthony.E</title>
 </head>
 
@@ -44,7 +45,7 @@
     <!-- --- HERO --- -->
     <section id="hero">
         <div class="heroContainer">
-            <h1><span class="space">JE SUIS</span> <span class="custom">WEB DESIGN</span></h1>
+            <h1 data-aos="zoom-in" data-aos-duration="1000"><span class="space">JE SUIS</span> <span class="custom">WEB DESIGN</span></h1>
             <div class="ability">
                 <p>Graphique</p>
                 <p>Illustration</p>
@@ -67,7 +68,7 @@
             <p><strong>Je suis actuellement à la recherche d’un stage</strong> pour compléter mon évolution dans le Web
                 Design pour le
                 mois de septembre 2021.</p>
-            <div class="more">
+            <div class="more" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
                 <span>Créativité</span><span>Travail
                     d'équipe</span><span>Organisé</span><span>Autonome</span><span>Fun</span></div>
         </section>
@@ -100,10 +101,10 @@
         <!-- --- CONTACT --- -->
         <section id="contact">
 
-            <div class="left">
+            <div class="left" data-aos="fade-right" data-aos-duration="1000">
                 <img src="assets/images/photoprof.jpg" alt="Photo Anthony Espirat">
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-duration="1000">
                 <div class="mail">
                     <h2>MAIL</h2>
                     <p>anthony.espirat63@gmail.com</p>
@@ -193,6 +194,10 @@
         <p>Design by Anthony E.</p>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

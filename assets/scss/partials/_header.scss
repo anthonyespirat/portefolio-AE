@@ -109,7 +109,7 @@ span {
     width: 100%;
     right: 0;
     top: 0;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     transition: 0.4s;
 
 
@@ -152,4 +152,5 @@ span {
     color: white;
     cursor: pointer;
     display: none;
+    z-index: 99;
 }

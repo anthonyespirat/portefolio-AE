@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 /* HEADER */
 header {
@@ -266,6 +266,29 @@ span {
 }
 #contact .right .mail {
   width: 100%;
+}
+#contact .right .cv {
+  width: 100%;
+  display: inline-block;
+}
+#contact .right .cv button {
+  width: 60%;
+  padding: 14px 0;
+  border: 2px solid #5688C7;
+  color: cornsilk;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  transition: all 0.3;
+}
+#contact .right .cv button:hover {
+  font-weight: 900;
+}
+#contact .right .cv .buttonStyle {
+  margin: 0;
 }
 
 /* FOOTER */

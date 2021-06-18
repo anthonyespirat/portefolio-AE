@@ -1,0 +1,54 @@
+// Variables
+@use "font";
+@use "color";
+
+
+.creaContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0 80px 0;
+}
+
+.creation {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        background: rgb(86, 136, 199);
+        background: linear-gradient(0deg, rgba(86, 136, 199, 0.6810925053615196) 0%, rgba(86, 136, 199, 0.6726891440169818) 21%, rgba(255, 255, 255, 0) 100%);
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        border-radius: 10px;
+        min-width: 300px;
+        min-height: 200px;
+        max-height: 200px;
+        filter: saturate(1);
+        transition: all 0.7s ease-out;
+
+
+        &:hover {
+            filter: saturate(2);
+            transform: scale(1.1);
+        }
+    }
+
+    p {
+        z-index: 3;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        font-weight: bold;
+    }
+}

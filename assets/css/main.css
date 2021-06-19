@@ -318,12 +318,13 @@ svg path {
 
 .creation {
   width: 23%;
+  height: 260px;
   margin-bottom: 30px;
   position: relative;
   transition: filter 0.4s, transform 0.2s;
 }
 .creation:hover {
-  filter: saturate(1.8);
+  filter: saturate(1.2);
   transform: scale(1.01);
 }
 .creation:after {
@@ -332,7 +333,7 @@ svg path {
   bottom: 0;
   left: 0;
   border-radius: 0px 0px 7px 7px;
-  background: rgba(86, 137, 199, 0.918);
+  background: rgba(86, 137, 199, 0.9);
   width: 100%;
   height: 20%;
 }
@@ -351,7 +352,7 @@ svg path {
   bottom: 15px;
   left: 20px;
   font-weight: bold;
-  font-size: 1.1vw;
+  font-size: 1em;
 }
 
 .noborder {
@@ -364,17 +365,18 @@ svg path {
 
 @media (max-width: 1440px) {
   .creation p {
-    bottom: 10px;
-    font-size: 1.4vw;
+    bottom: 15px;
+    font-size: 0.9em;
   }
 }
 @media (max-width: 960px) {
   .creation {
     width: 43%;
+    height: 270px;
   }
   .creation p {
     bottom: 15px;
-    font-size: 2vw;
+    font-size: 1em;
   }
 
   .heroContainer {
@@ -389,10 +391,11 @@ svg path {
 @media (max-width: 768px) {
   .creation {
     width: 90%;
-    height: 200px;
+    height: 300px;
   }
   .creation p {
-    font-size: 0.8em;
+    font-size: 1em;
+    bottom: 20px;
   }
   .creation img {
     object-fit: cover;

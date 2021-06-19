@@ -11,44 +11,44 @@
 }
 
 .creation {
-    width: 300px;
-    height: 200px;
+    width: 23%;
     margin-bottom: 30px;
     position: relative;
+    transition: filter 0.4s, transform 0.2s;
+
+    &:hover {
+        filter: saturate(1.8);
+        transform: scale(1.01);
+    }
 
     &:after {
         content: "";
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
-        border-radius: 10px;
-        background: rgb(86, 136, 199);
-        background: linear-gradient(0deg, rgba(86, 136, 199, 0.6810925053615196) 0%, rgba(86, 136, 199, 0.6726891440169818) 21%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 0px 0px 7px 7px;
+        background: rgba(86, 137, 199, 0.918);
         width: 100%;
-        height: 100%;
+        height: 20%;
+
     }
 
     img {
-        border-radius: 10px;
-        min-width: 300px;
-        min-height: 200px;
-        max-height: 200px;
+        object-fit: cover;
+        border-radius: 7px;
+        width: 100%;
+        height: 100%;
         filter: saturate(1);
         transition: all 0.7s ease-out;
-
-
-        &:hover {
-            filter: saturate(2);
-            transform: scale(1.1);
-        }
     }
 
     p {
         z-index: 3;
         color: white;
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
         left: 20px;
         font-weight: bold;
+        font-size: 1.1vw;
     }
 }

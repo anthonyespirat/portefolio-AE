@@ -13,10 +13,31 @@
 @media (max-width: 1440px) {
 
     //HEADER -5vh
+    .creation {
+        p {
+            bottom: 10px;
+            font-size: 1.4vw;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    //HEADER -5vh
 
 }
 
+
 @media (max-width: 960px) {
+    .creation {
+        width: 43%;
+
+        p {
+            bottom: 15px;
+            font-size: 2vw;
+        }
+    }
+
     .heroContainer {
         margin-bottom: 15%;
     }
@@ -30,6 +51,20 @@
 }
 
 @media (max-width: 768px) {
+
+    .creation {
+        width: 90%;
+        height: 200px;
+
+        p {
+            font-size: 0.8em;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+
     #hero {
         h1 {
             display: flex;
@@ -72,7 +107,10 @@
         background-size: 275%;
         background-position: bottom center;
     }
+
+
 }
+
 
 
 @media (max-width: 806px) {

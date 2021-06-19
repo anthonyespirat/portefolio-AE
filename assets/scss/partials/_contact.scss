@@ -39,9 +39,39 @@
         .mail {
             width: 100%;
         }
+
+        .cv {
+            width: 100%;
+            display: inline-block;
+
+
+            button {
+                width: 60%;
+                padding: 14px 0;
+                border: 2px solid color.$blue;
+                color: cornsilk;
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-radius: 8px;
+                background-color: cornflowerblue;
+                cursor: pointer;
+                transition: all 0.3;
+
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+
+            .buttonStyle {
+                margin: 0;
+            }
+
+        }
     }
 
 }
+
 
 /* FOOTER */
 

@@ -9,21 +9,22 @@ header {
 }
 
 .logo {
-  margin-left: 70px;
+  margin-left: 60px;
 }
 .logo img {
   width: 90px;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-around;
   text-transform: uppercase;
   font-weight: 700;
-  margin-right: 70px;
+  margin-right: 60px;
 }
 nav li {
-  padding: 0 30px 0 30px;
+  display: inline-block;
+}
+nav a {
+  padding: 6px 20px 6px 20px;
 }
 nav a:hover {
   transition: 0.4s;

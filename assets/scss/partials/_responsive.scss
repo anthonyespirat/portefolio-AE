@@ -15,8 +15,8 @@
     //HEADER -5vh
     .creation {
         p {
-            bottom: 10px;
-            font-size: 1.4vw;
+            bottom: 15px;
+            font-size: 0.9em;
         }
     }
 }
@@ -31,10 +31,11 @@
 @media (max-width: 960px) {
     .creation {
         width: 43%;
+        height: 270px;
 
         p {
             bottom: 15px;
-            font-size: 2vw;
+            font-size: 1em;
         }
     }
 
@@ -54,10 +55,11 @@
 
     .creation {
         width: 90%;
-        height: 200px;
+        height: 300px;
 
         p {
-            font-size: 0.8em;
+            font-size: 1em;
+            bottom: 20px;
         }
 
         img {

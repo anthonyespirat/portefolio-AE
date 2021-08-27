@@ -52,4 +52,22 @@
         font-weight: bold;
         font-size: 1em;
     }
+
 }
+    .see-more {
+        button {
+            border: none;
+            background-color: color.$blue;
+            padding: 1em;
+            border-radius: 10px;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: large;
+            cursor: pointerx;
+        }
+        text-decoration: underline;
+
+        &:hover {
+            opacity: 0.95;
+        }
+    }

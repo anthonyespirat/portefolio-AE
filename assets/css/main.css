@@ -356,6 +356,23 @@ svg path {
   font-size: 1em;
 }
 
+.see-more {
+  text-decoration: underline;
+}
+.see-more button {
+  border: none;
+  background-color: #5688C7;
+  padding: 1em;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: large;
+  cursor: pointerx;
+}
+.see-more:hover {
+  opacity: 0.95;
+}
+
 .noborder {
   border-right: none !important;
 }
